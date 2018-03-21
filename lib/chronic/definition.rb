@@ -59,7 +59,9 @@ module Chronic
         [[OrdinalDay, SeparatorSpace, MonthName,   SeparatorSpace, ScalarYear], :handle_od_mn_sy],
         [[ScalarDay,  SeparatorDash,  MonthName,   SeparatorDash,  ScalarYear], :handle_sd_mn_sy],
         [[ScalarDay,  SeparatorSpace, MonthName,   SeparatorSpace, ScalarYear], :handle_sd_mn_sy],
-        [[ScalarDay,  SeparatorDot,   ScalarMonth, SeparatorDot,   ScalarYear], :handle_sd_sm_sy]
+        [[ScalarDay,  SeparatorDot,   ScalarMonth, SeparatorDot,   ScalarYear], :handle_sd_sm_sy],
+        [[ScalarMonth, SeparatorSlash, OrdinalDay, SeparatorSlash, ScalarYear], :handle_sm_od_sy],
+        [[ScalarMonth, SeparatorDash,  ScalarDay, SeparatorDash,  ScalarYear], :handle_sm_sd_sy]
       ]
     end
   end
